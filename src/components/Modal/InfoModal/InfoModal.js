@@ -1,5 +1,5 @@
-import { Button, Modal } from "antd";
-import React, { useState } from "react";
+import { Modal } from "antd";
+import React from "react";
 import "./infoModal.scss";
 const InfoModal = ({ infoModal, setInfoModal }) => {
   console.log(infoModal)

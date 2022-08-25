@@ -1,11 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ContactList from "../../components/Contacts/ContactList/ContactList";
 import 'react-toastify/dist/ReactToastify.css';
 import InfoModal from '../../components/Modal/InfoModal/InfoModal';
 import DeleteModal from '../../components/Modal/DeleteModal/DeleteModal';
-import { ContactContext } from '../../context/ContactProvider';
 const Contact = () => {
-  const {contactData,setContactData}=useContext(ContactContext);
   const [infoModal,setInfoModal]=useState(false);
   const [deleteModal,setDeleteModal]=useState(false);
   useEffect(()=>{
