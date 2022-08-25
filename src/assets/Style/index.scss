@@ -1,0 +1,12 @@
+// UTILS
+
+@import "./utils/reset";
+@import "./utils/helper";
+
+// Components
+@import "../../components/Layout/Header/header.scss";
+
+// PAGES
+@import "../../containers/Contacts/contact.scss";
+@import "../../containers/NewContact/newContact.scss";
+@import "../../containers/EditContact/editContact.scss";

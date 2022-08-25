@@ -1,0 +1,11 @@
+.deleteModal{
+    .ant-modal-title{
+        color: red;
+        font-size: 20px;
+        text-align: center;
+    }
+    .ant-modal-footer,
+    .ant-modal-header{
+        border: 0;
+    }
+}

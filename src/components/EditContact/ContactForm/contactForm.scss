@@ -1,0 +1,51 @@
+.createForm {
+  width: 100%;
+  input,
+  textarea,
+  .ant-select-selector {
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
+  .ant-form-item {
+    margin-bottom: 30px;
+  }
+  .ant-input-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .ant-form-item-label{
+    min-width: 100px;
+  }
+  .ant-row {
+    justify-content: center;
+  }
+  .ant-form-item-control-input {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .ant-input-group-addon:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  button {
+    border-radius: 8px;
+  }
+  .ant-col{
+    margin-left: 10px;
+  }
+  .sendMe .ant-col {
+    margin-left: 9%;
+  }
+  .form-btn {
+    display: flex;
+    justify-content: center;
+    .ant-col {
+      margin: 0;
+      max-width: 100%;
+      button {
+        background-color: green;
+        padding:0 50px;
+      }
+    }
+  }
+}

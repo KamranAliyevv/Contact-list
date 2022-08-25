@@ -1,0 +1,30 @@
+header {
+  background-color: rgb(221, 192, 192);
+
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .header-icon {
+      font-size: 25px;
+
+      a{
+      color: rebeccapurple;
+      }
+    }
+    button{
+        display: flex;
+        align-items: center;
+        background-color: blue;
+        padding: 5px 15px;
+        color: #fff;
+        border-radius: 8px;
+
+        svg{
+            font-size: 30px;
+        }
+    }
+  }
+}
