@@ -10,24 +10,24 @@ header {
     .header-icon {
       font-size: 25px;
       padding: 5px;
-    border-radius: 20%;
-    background: mediumvioletred;
+      border-radius: 20%;
+      background: mediumvioletred;
 
-      a{
-      color: #25d52f;
+      a {
+        color: #25d52f;
       }
     }
-    button{
-        display: flex;
-        align-items: center;
-        background-color: blue;
-        padding: 5px 15px;
-        color: #fff;
-        border-radius: 8px;
+    button {
+      display: flex;
+      align-items: center;
+      background-color: blue;
+      padding: 5px 15px;
+      color: #fff;
+      border-radius: 8px;
 
-        svg{
-            font-size: 30px;
-        }
+      svg {
+        font-size: 30px;
+      }
     }
   }
 }

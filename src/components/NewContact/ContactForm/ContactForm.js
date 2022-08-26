@@ -25,10 +25,8 @@ const ContactForm = () => {
     const replacer = (key, value) =>
       typeof value === "undefined" ? null : value;
     values.key = uuidv4();
-    console.log(values);
     const copyContactData = [...contactData];
     copyContactData.push(values);
-    console.log(copyContactData);
     localStorage.setItem("contacts", JSON.stringify(copyContactData, replacer));
     setContactData(copyContactData);
     notify("New Contact added");

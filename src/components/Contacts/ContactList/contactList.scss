@@ -1,9 +1,9 @@
-.ant-table-content{
+.ant-table-content {
   tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
+    background-color: #f2f2f2;
+  }
 
-.ant-space-item span{
+  .ant-space-item span {
     width: 25px;
     height: 25px;
     border-radius: 5px;
@@ -11,25 +11,25 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size:17px;
+    font-size: 17px;
     cursor: pointer;
-    
-    &.info{
-        background-color: blue;
+
+    &.info {
+      background-color: blue;
     }
-    &.edit{
-        background-color: green;
+    &.edit {
+      background-color: green;
     }
-    &.delete{
-        background-color: red;
+    &.delete {
+      background-color: red;
     }
+  }
 }
+.ant-table {
+  overflow-x: auto !important;
+  user-select: none;
+  z-index: 1000;
 }
-.ant-table{
-    overflow-x: auto!important;
-    user-select: none;
-    z-index: 1000;
-}
-.ant-table-thead>tr>th{
-    white-space: pre
+.ant-table-thead > tr > th {
+  white-space: pre;
 }

@@ -5,43 +5,44 @@ import { useNavigate, useParams } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import "antd/dist/antd.min.css";
 import "./contactForm.scss";
-import { formItemLayout, isDirty, tailFormItemLayout } from "../../../utils/formUtils";
+import {
+  formItemLayout,
+  isDirty,
+  tailFormItemLayout,
+} from "../../../utils/formUtils";
 import { ContactContext } from "../../../context/ContactProvider";
 const { Option } = Select;
 
 const ContactForm = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
-  const params=useParams();
-  const notify = (text,type) =>
+  const params = useParams();
+  const notify = (text, type) =>
     toast(text, {
       position: "top-right",
       type: type || "success",
       autoClose: 5000,
     });
-  const {contactData,setContactData}=useContext(ContactContext);
-  const editData=contactData.find((item)=>item.key===params.id)
+  const { contactData, setContactData } = useContext(ContactContext);
+  const editData = contactData.find((item) => item.key === params.id);
 
   const onFinish = (values) => {
-    values.key=editData.key;
-    console.log(isDirty(editData,values))
-    const dirtyData=isDirty(editData,values);
-    if(!dirtyData){
-    notify("Contact could not be changed","error");
-    }
-    else{
-      let filterCopyContactData=[];
-    [...contactData].forEach(item=>{
-      if(item.key===values.key){
-        item=dirtyData
-      }
-      filterCopyContactData.push(item)
-    });
-    console.log(filterCopyContactData)
-    localStorage.setItem("contacts",JSON.stringify(filterCopyContactData))
-    setContactData(filterCopyContactData)
-    navigate("/contacts");
-    notify("Contact changed and saved");
+    values.key = editData.key;
+    const dirtyData = isDirty(editData, values);
+    if (!dirtyData) {
+      notify("Contact could not be changed", "error");
+    } else {
+      let filterCopyContactData = [];
+      [...contactData].forEach((item) => {
+        if (item.key === values.key) {
+          item = dirtyData;
+        }
+        filterCopyContactData.push(item);
+      });
+      localStorage.setItem("contacts", JSON.stringify(filterCopyContactData));
+      setContactData(filterCopyContactData);
+      navigate("/contacts");
+      notify("Contact changed and saved");
     }
   };
 

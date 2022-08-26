@@ -1,24 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul li,
-ol li{
-    list-style-type: none;
+ol li {
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-button,input{
-    border: 0;
-    outline: 0;
-    background: transparent;
+button,
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-textarea{
-    resize: none!important;
+textarea {
+  resize: none !important;
 }
